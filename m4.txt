@@ -1,0 +1,32 @@
+"""
+Tasks for modul 4 (A7, A8, and B5) for exam 2023-08-15
+"""
+
+#A7
+def transpose(M):
+    pass
+
+#A8
+from random import gauss
+
+def samples(n, mu):
+    # returns a list of n random values from a normal distribution with a mean mu
+    # do not modify
+    return [gauss(mu) for _ in range(n)]
+
+def gauss_test(n, mus):
+    pass
+
+#B5
+def approximate_all_poker_frequencies(n, n_processes):
+    pass
+
+if __name__ == '__main__':
+    print("A7:")
+    print(transpose([[2, -1], [-1, 2]]))
+    print(transpose([[3, 1, 7], [4, 5, 6]]))
+    print(transpose([[4], [43], [9]]))
+    print("A8:")
+    print(gauss_test(10000, [-3, 10, 2.3]))
+    print("B5:")
+    approximate_all_poker_frequencies(10000, 4)

@@ -1,0 +1,16 @@
+ 
+# A3: Assignment operator
+2 = x                           # Expects 2.0
+1 = x = y = z                   # Expects 1.0  
+x + y + z = u                   # Expects 3.0
+1 = x + 2                       # Expects Syntax error
+1 = 2                           # Expects Syntax error
+1 = x = y = 2                   # Expects Syntax error
+
+# A4: Functions with several arguments
+max(1,3,2)                      # Expects 3.0
+min(5,3-1,1) + 2*max(3*3,1)     # Expects 19.0
+sum(max(2,1), sum(1,3), 4) + 1  # Expects 11.0
+sum()                           # Expects Syntax error
+min(2,3,)                       # Expects Syntax error
+sum(2, 3/(2*3-6))               # Expects Evaluation error
